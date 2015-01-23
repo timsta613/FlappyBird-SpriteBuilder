@@ -179,8 +179,9 @@
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character level:(CCNode*)level {
     /*[self gameOver];
-    return TRUE;*/
-    [self.physicsBody applyImpulse:ccp(0, 0.0f)];
+    return TRUE;
+    */
+    character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 0.0f);
     return TRUE;
 }
 
