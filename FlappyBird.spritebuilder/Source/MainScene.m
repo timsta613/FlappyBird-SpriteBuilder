@@ -181,6 +181,7 @@
     /*[self gameOver];
     return TRUE;*/
     [self.physicsBody applyImpulse:ccp(0, 0.0f)];
+    return TRUE;
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character goal:(CCNode *)goal {
