@@ -178,8 +178,9 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character level:(CCNode*)level {
-    [self gameOver];
-    return TRUE;
+    /*[self gameOver];
+    return TRUE;*/
+    [self.physicsBody applyImpulse:ccp(0, 0.0f)];
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character goal:(CCNode *)goal {
