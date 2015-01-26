@@ -178,11 +178,11 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character level:(CCNode*)level {
-    /*[self gameOver];
+    [self gameOver];
     return TRUE;
-    */
+    /*
     character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 0.0f);
-    return TRUE;
+    return TRUE;*/
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character goal:(CCNode *)goal {
